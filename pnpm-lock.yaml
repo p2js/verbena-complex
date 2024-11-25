@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      complex.js:
+        specifier: ^2.4.2
+        version: 2.4.2
+      verbena:
+        specifier: ^0.4.0
+        version: 0.4.0
+
+packages:
+
+  complex.js@2.4.2:
+    resolution: {integrity: sha512-qtx7HRhPGSCBtGiST4/WGHuW+zeaND/6Ld+db6PbrulIB1i2Ev/2UPiqcmpQNPSyfBKraC0EOvOKCB5dGZKt3g==}
+
+  verbena@0.4.0:
+    resolution: {integrity: sha512-WrZ4lfd0+gbH8wkSSEX23EHgzi84omsVzOrqv7R2t3I86BFK5irLfCag8P54jX9bTPQuo0WvotSyFzVEtG/JFw==}
+
+snapshots:
+
+  complex.js@2.4.2: {}
+
+  verbena@0.4.0: {}
