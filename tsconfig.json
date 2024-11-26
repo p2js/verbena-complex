@@ -5,7 +5,6 @@
         "module": "nodeNext",
         "removeComments": false,
         "lib": [
-            "DOM",
             "ESNext"
         ],
         "outDir": "./lib",

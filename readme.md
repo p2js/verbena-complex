@@ -7,3 +7,17 @@ It uses verbena's standard lexer, parser and compiler, all completely unmodified
 Some additional logic is implemented after lexing and parsing to allow for additional robustness and ergonomics:
     - any identifier `i` will be converted to the constant `i` to allow implicit multiplications of variables by i, such as `ix`.
     - due to the lack of logical operator overloading in verbena, as well as the lack of a natural order on the complex numbers, function clauses are unimplemented and will be removed before compilation.
+
+## Usage
+
+```
+npm install verbena-complex
+```
+
+```js
+import { ComplexFunction } from 'verbena-complex';
+
+const f = ComplexFunction("f(x) = re(x * (3+2i))");
+
+console.log(f(2)); // { re: 6, im: 0 }
+```

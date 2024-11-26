@@ -43,8 +43,8 @@ export const complexLib: Library<Complex> = {
         hypot: forceComplex((...zs) => zs.reduce((acc, z) => acc.add(z.pow(2)), Complex(0)).sqrt()),
         log_: forceComplex((z, b = Complex(10)) => z.log().div(b.log())),
         ln: forceComplex((z) => z.log()),
-        // max: forceComplex((z) => z.max()),    -> Should these be implemented by magnitude?
-        // min: forceComplex((z) => z.min()),
+        max: forceReal(Math.max),
+        min: forceReal(Math.min),
         pow: forceComplex((z, p) => z.pow(p)),
         random: () => Complex(Math.random()),
         round: forceComplex((z) => z.round(0)),
