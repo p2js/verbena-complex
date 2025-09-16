@@ -24,10 +24,10 @@ export const complexLib: Library<Complex> = {
         fac: forceReal(std.functions.fac)
     },
     functions: {
-        re: forceComplex((z) => Complex(z.re)),
-        im: forceComplex((z) => Complex(0, z.im)),
+        re: forceComplex((z) => z.re),
+        im: forceComplex((z) => z.im),
 
-        abs: forceComplex((z) => Complex(z.abs())),
+        abs: forceComplex((z) => z.abs()),
         acos: forceComplex((z) => z.acos()),
         acosh: forceComplex((z) => z.acosh()),
         asin: forceComplex((z) => z.asin()),
